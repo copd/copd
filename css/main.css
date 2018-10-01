@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 640px;
+  margin: 0px auto;
+}
+
+

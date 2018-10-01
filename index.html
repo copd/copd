@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COPD risk assessment</title>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/ecmascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body class="container-fluid py-3 py-md-5">
+<h1 class="my-3 my-md-5">COPD risk assessment</h1>
+
+<div class="row py-2">
+  <div class="col-md-12">
+    <p>Chronic Obstructive Pulmonary Disease is a group of lung conditions that cause breathing difficulties. Many people don't realise they have it, with 1.2 million currently diagnosed in England but potentially <a href="https://www.england.nhs.uk/rightcare/2018/01/08/improving-outcomes-in-chronic-obstructive-pulmonary-disease-copd/">three times as many people undiagnosed</a>.</p>
+    <p>This is a short set of questions designed to give a broad indication as to whether you should have a chat with a doctor about your COPD risk.</p>
+  </div>
+</div>
+
+<div id="low-risk" class="row py-2 d-none">
+  <div class="col-md-12 text-white bg-success p-3">
+    <h2>Low risk</h2>
+    <p>Your risk score suggests a low COPD risk. This score alone does not suggest a need to see a doctor, but if you have any concerns you should seek advice regardless.</p>
+  </div>
+</div>
+
+<div id="at-risk" class="row py-2 d-none">
+  <div class="col-md-12 text-white bg-info p-3">
+    <h2>At risk</h2>
+    <p>Your risk score suggests you are at a moderately higher risk of COPD. Perhaps one in five people with your score will have COPD. We recommend you see a doctor so they can give you a more accurate assessment.</p>
+  </div>
+</div>
+
+<div class="row py-2">
+  <div class="col-md-7">
+    <label>Age</label>
+  </div>
+  <div class="col-md-5">
+    <select id="age" class="form-control">
+      <option></option>
+      <option value="below">Below 35</option>
+      <option value="above">35 or older</option>
+    </select>
+  </div>
+</div>
+
+<div class="row py-2">
+  <div class="col-md-7">
+    <label>Smoking status</label>
+  </div>
+  <div class="col-md-5">
+    <select id="smoking" class="form-control">
+      <option></option>
+      <option value="former">Former smoker</option>
+      <option value="current">Current smoker</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+</div>
+
+<div class="row py-2">
+  <div class="col-md-7">
+    <label>Number of chest infections (past 3 years)</label>
+  </div>
+  <div class="col-md-5">
+    <select id="infections" class="form-control">
+      <option></option>
+      <option value="one">Zero or one</option>
+      <option value="two">Two or more</option>
+    </select>
+  </div>
+</div>
+<div class="row py-2">
+  <div class="col-md-7">
+    <label>History of asthma</label>
+  </div>
+  <div class="col-md-5">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="asthma" value="yes"/>
+      <label class="form-check-label">Yes</label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="asthma" value="no"/>
+      <label class="form-check-label">No</label>
+    </div>
+  </div>
+</div>
+<div class="row py-2">
+  <div class="col-md-7">
+    <label class="form-check-label"><a href="https://beta.nhs.uk/medicines/salbutamol-inhaler/">Salbutamol</a> prescribed in past 3 years <a href="https://beta.nhs.uk/medicines/salbutamol-inhaler/#key-facts"><i class="fas fa-info-circle text-primary" title="Brand names for salbutamol inhalers include Ventolin, Airomir, Asmalal, Easyhaler, Pulvinal, Salamol, Easi-Breathe and Salbulin"></i></a></label>
+  </div>
+  <div class="col-md-5">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="salbutamol" value="yes"/>
+      <label class="form-check-label">Yes</label>
+    </div>
+    
+    <div class="form-check">
+      <input id="salbultamol-no" class="form-check-input" type="radio" name="salbutamol" value="no"/>
+      <label class="form-check-label" for="salbutamol-no">No</label>
+    </div>
+  </div>
+</div>
+
+<div class="row pt-5">
+  <div class="col-md-12 pt-5">
+    <div class="alert alert-secondary" role="alert">
+  Assessment method derived from:<br/>
+      <a href="https://bmjopenrespres.bmj.com/content/2/1/e000060">Haroon S, Adab P, Riley RD, et al Predicting risk of COPD in primary care: development and validation of a clinical risk score BMJ Open Respiratory Research 2015;2:e000060. doi: 10.1136/bmjresp-2014-000060</a>
+</div>
+  </div>
+</div>
+
+    <script type="text/ecmascript" src="js/main.js"></script>
+  </body>
+</html>
