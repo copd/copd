@@ -24,7 +24,7 @@ function calculate() {
       smokingRisk = (smoking === "former" ? 1.55 : 
                      (smoking === "current" ? 2.46 : 0.89)
                      ),
-      infectionsRisk = (infections === "one" ? 0.94 : 1.46),
+      infectionsRisk = (infections === "one" ? 0.94 : (infections === "two" ? 1.46 : 0)),
       asthmaRisk = (asthma === "yes" ? 0.75 : 0),
       salbutamolRisk = (salbutamol === "yes" ? 1.93 : 0);
     
